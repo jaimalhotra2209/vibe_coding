@@ -378,6 +378,69 @@ Let me know if you run into any issues or see any conflict messages!
 
 ---
 
+_**User**_
+
+error: cannot pull with rebase: You have unstaged changes
+
+---
+
+_**Assistant**_
+
+This error means you have local changes that haven’t been staged (added to git).  
+You need to either commit or stash these changes before you can pull with rebase.
+
+---
+
+## To Fix
+
+### Option 1: Commit your changes
+
+1. **Stage your changes:**
+   ```sh
+   git add .
+   ```
+
+2. **Commit them:**
+   ```sh
+   git commit -m "Your message about the changes"
+   ```
+
+3. **Now pull with rebase:**
+   ```sh
+   git pull origin main --rebase
+   ```
+
+---
+
+### Option 2: Stash your changes (if you don’t want to commit yet)
+
+1. **Stash your changes:**
+   ```sh
+   git stash
+   ```
+
+2. **Pull with rebase:**
+   ```sh
+   git pull origin main --rebase
+   ```
+
+3. **Apply your stashed changes back:**
+   ```sh
+   git stash pop
+   ```
+
+---
+
+After either option, you can proceed to push:
+
+```sh
+git push -u origin main
+```
+
+Let me know if you need help with any of these steps!
+
+---
+
 
 
 ---
