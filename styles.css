@@ -53,17 +53,17 @@ button {
 }
 
 #start {
-    background-color: #4CAF50;
+    background-color: purple;
     color: white;
 }
 
 #pause {
-    background-color: #FFC107;
+    background-color: orange;
     color: white;
 }
 
 #reset {
-    background-color: #f44336;
+    background-color: green;
     color: white;
 }
 
